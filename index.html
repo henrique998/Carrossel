@@ -3,16 +3,33 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <script type="module" defer src="/src/main.ts"></script>
+  <script defer src="https://unpkg.com/phosphor-icons"></script>
 
-  <title>Vite + TS</title>
+  <title>Carrossel</title>
 </head>
 
 <body>
-  <main></main>
+  <main>
+    <button data-button="previous-image-button" class="previous-image-button">
+      <i class="ph-caret-left"></i>
+    </button>
+
+    <button data-button="next-image-button" class="next-image-button">
+      <i class="ph-caret-right"></i>
+    </button>
+
+    <div data-element="carousel" class="carousel-container">
+      <img src="/woman1.jpg" alt="woman01">
+      <img src="/woman2.jpg" alt="woman02">
+      <img src="/woman3.jpg" alt="woman03">
+      <img src="/man1.jpg" alt="man01">
+      <img src="/man2.jpg" alt="man02">
+      <img src="/man3.jpg" alt="man03">
+    </div>
+  </main>
 </body>
 
 </html>
